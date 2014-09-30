@@ -1,0 +1,66 @@
+/* 共通デザインCSS -------------------------*/
+.clearfix:before, .clearfix:after{
+	content: " ";
+	display: block;
+}
+.clearfix:after{
+	clear: both;
+}
+.layout_container{
+	background-color: #123456;
+	width: 100%;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+h1,h2{
+	margin:4px;
+}
+
+h1{
+	font-size: 20px
+}
+
+h2{
+	font-size: 16px;
+}
+.left{
+	background-color: #345689;
+}
+.middle{
+	background-color: #765432;
+}
+.right{
+	background-color: #987654;
+}
+/* 各デザインCSS -------------------------*/
+/* floatを使う -------------------------*/
+.float_layout .left{
+	float: left;
+	width: 30%;
+	height: 100%;
+}
+.float_layout .right{
+	float: right;
+	width: 70%;
+	height: 100%;
+}
+/* display: tableを使う-------------------------*/
+.table_layout{
+	display: table;
+}
+.table_layout > li {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+/* table-layout:fixedで均等に広げる-------------------------*/
+.table_fix_layout{
+	display: table;
+	table-layout: fixed;
+}
+.table_fix_layout > li {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}

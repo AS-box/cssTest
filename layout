@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>レスポンシブなCSSレイアウトパターン的なあれ</title>
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+	<h1>レスポンシブなCSSレイアウトパターン</h1>
+	<h2>①floatを使う</h2>
+	<div class="float_layout clearfix layout_container">
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+	<h2>②display: tableを使う。内容によって幅が変わる。vertical-alignとtext-alignが使える</h2>
+	<ul class="table_layout layout_container">
+		<li class="left">短め</li>
+		<li class="middle">こいつは長めでいこう</li>
+		<li class="right">左より長い</li>
+	</ul>
+	<h2>③table-layout:fixedで内容に関係なく均等に広げる。vertical-alignとtext-alignが使える</h2>
+	<ul class="table_fix_layout layout_container">
+		<li class="left">短め</li>
+		<li class="middle">内容に関係なく均等に幅がきめられる！</li>
+		<li class="right">左より長い</li>
+	</ul>
+</body>
+</html>
